@@ -13,7 +13,7 @@ struct ReminderDisplayApp {
 impl ReminderDisplayApp {
     fn new(_cc: &eframe::CreationContext<'_>) -> Self {
         let reminder_manager = Arc::new(Mutex::new(ReminderManager::new()));
-        
+
         // Start background file watcher and rotation
         let manager_clone = reminder_manager.clone();
         tokio::spawn(async move {
@@ -49,27 +49,27 @@ impl eframe::App for ReminderDisplayApp {
                         ui.with_layout(egui::Layout::top_down(egui::Align::Center), |ui| {
                             ui.label(
                                 egui::RichText::new(&reminder.text)
-                                    .size(32.0)
-                                    .color(reminder.get_color())
+                                    .size(64.0)
+                                    .color(reminder.get_color()),
                             );
-                            
+
                             ui.add_space(20.0);
-                            
+
                             // Category and time info
                             ui.horizontal(|ui| {
                                 if !reminder.category.is_empty() {
                                     ui.label(
                                         egui::RichText::new(format!("📂 {}", reminder.category))
-                                            .size(16.0)
-                                            .color(egui::Color32::GRAY)
+                                            .size(20.0)
+                                            .color(egui::Color32::GRAY),
                                     );
                                 }
-                                
+
                                 if let Some(time_range) = &reminder.time_range {
                                     ui.label(
                                         egui::RichText::new(format!("⏰ {}", time_range))
-                                            .size(16.0)
-                                            .color(egui::Color32::GRAY)
+                                            .size(20.0)
+                                            .color(egui::Color32::GRAY),
                                     );
                                 }
                             });
@@ -77,8 +77,8 @@ impl eframe::App for ReminderDisplayApp {
                     } else {
                         ui.label(
                             egui::RichText::new("No reminders configured")
-                                .size(24.0)
-                                .color(egui::Color32::GRAY)
+                                .size(64.0)
+                                .color(egui::Color32::GRAY),
                         );
                     }
 
