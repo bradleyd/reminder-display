@@ -104,12 +104,12 @@ impl ReminderManager {
 
         // Check multiple locations in order of preference
         let possible_paths = vec![
-            PathBuf::from("work_reminders.json"), // Current directory
+            PathBuf::from("work_reminders.json"),   // Current directory
             PathBuf::from("./work_reminders.json"), // Explicit current directory
             dirs::home_dir()
                 .map(|d| d.join("work_reminders.json"))
                 .unwrap_or_default(), // Home directory
-            PathBuf::from("/home/pi/work_reminders.json"), // Original fallback
+            PathBuf::from("/home/bradleydsmith/work_reminders.json"), // Original fallback
         ];
 
         // Return the first existing file, or default to current directory

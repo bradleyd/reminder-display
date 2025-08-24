@@ -20,7 +20,7 @@ cargo build --release
 
 echo "Setup complete!"
 echo ""
-echo "To customize your reminders, edit: /home/pi/work_reminders.json"
+echo "To customize your reminders, edit: /home/bradleydsmith/work_reminders.json"
 echo "To run: ./target/release/display_app"
 echo ""
 echo "The display will:"
