@@ -1,0 +1,16 @@
+[
+  {
+    "text": "Take a 5-minute break - stretch and hydrate",
+    "category": "Health",
+    "priority": "medium",
+    "time_range": null,
+    "days": null
+  },
+  {
+    "text": "Check and respond to team messages",
+    "category": "Communication",
+    "priority": "medium",
+    "time_range": "09:00-17:00",
+    "days": ["monday", "tuesday", "wednesday", "thursday", "friday"]
+  }
+]
