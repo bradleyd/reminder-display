@@ -1,0 +1,72 @@
+[
+  {
+    "text": "Review pull requests and code changes",
+    "category": "Development",
+    "priority": "high",
+    "time_range": "09:00-10:00",
+    "days": ["monday", "tuesday", "wednesday", "thursday", "friday"]
+  },
+  {
+    "text": "Stand-up meeting preparation",
+    "category": "Meetings",
+    "priority": "high",
+    "time_range": "08:45-09:00",
+    "days": ["monday", "tuesday", "wednesday", "thursday", "friday"]
+  },
+  {
+    "text": "Check system monitoring dashboards",
+    "category": "DevOps",
+    "priority": "high",
+    "time_range": "morning",
+    "days": ["monday", "tuesday", "wednesday", "thursday", "friday"]
+  },
+  {
+    "text": "Take a short break - eye rest",
+    "category": "Health",
+    "priority": "medium",
+    "time_range": null,
+    "days": null
+  },
+  {
+    "text": "Update project documentation",
+    "category": "Documentation",
+    "priority": "low",
+    "time_range": "afternoon",
+    "days": ["friday"]
+  },
+  {
+    "text": "Review security updates",
+    "category": "Security",
+    "priority": "high",
+    "time_range": "09:00-09:30",
+    "days": ["monday", "thursday"]
+  },
+  {
+    "text": "Hydrate - drink water",
+    "category": "Health",
+    "priority": "medium",
+    "time_range": null,
+    "days": null
+  },
+  {
+    "text": "Check email and respond to urgent items",
+    "category": "Communication",
+    "priority": "medium",
+    "time_range": "11:00-11:30",
+    "days": ["monday", "tuesday", "wednesday", "thursday", "friday"]
+  },
+  {
+    "text": "Plan tomorrow's tasks",
+    "category": "Planning",
+    "priority": "low",
+    "time_range": "16:30-17:00",
+    "days": ["monday", "tuesday", "wednesday", "thursday"]
+  },
+  {
+    "text": "Backup important work",
+    "category": "DevOps",
+    "priority": "high",
+    "time_range": "evening",
+    "days": ["friday"]
+  }
+]
